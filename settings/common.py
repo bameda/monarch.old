@@ -83,6 +83,7 @@ INSTALLED_APPS = (
 
     'monarch',
     'monarch.users',
+    'monarch.documents',
 )
 
 MIDDLEWARE_CLASSES = (
