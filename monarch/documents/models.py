@@ -22,11 +22,16 @@ def calculate_document_path(instance, filename):
 
 
 class Document(models.Model):
-    subject = models.CharField(null=False, blank=False, max_length=256, verbose_name=_("subject"))
-    file = models.FileField(null=False, blank-False, upload_to=calculate_document_patch, verbose_name=_("file"))
-    author = models.CharField(null=False, blank=False, max_length=256, verbose_name=_("author"))
-    cration_date = models.DateTimeField(null=True, blanck=True, verbose_name=_("creation date"))
-    description =models.TextField(null=True, blanck=True, verbose_name=_("sdescription"))
+    subject = models.CharField(null=False, blank=False, max_length=256,
+                               verbose_name=_("subject"))
+    author = models.CharField(null=False, blank=False, max_length=256,
+                              verbose_name=_("author"))
+    creation_date = models.DateTimeField(null=True, blanck=True,
+                                         verbose_name=_("creation date"))
+    description =models.TextField(null=True, blanck=True,
+                                  verbose_name=_("sdescription"))
+    file = models.FileField(null=False, blank-False, upload_to=calculate_document_patch,
+                            verbose_name=_("file"))
 
     class Meta:
         verbose_name = "document"
