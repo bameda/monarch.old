@@ -1,2 +1,2 @@
-git+git://github.com/django/django#egg=django
+git+git://github.com/django/django#egg=django # Dajngo 1.9
 psycopg2==2.6
