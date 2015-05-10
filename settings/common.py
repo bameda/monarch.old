@@ -82,6 +82,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'monarch',
+    'monarch.base',
     'monarch.users',
     'monarch.documents',
 )
