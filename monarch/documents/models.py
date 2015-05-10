@@ -26,11 +26,11 @@ class Document(models.Model):
                                verbose_name=_("subject"))
     author = models.CharField(null=False, blank=False, max_length=256,
                               verbose_name=_("author"))
-    creation_date = models.DateTimeField(null=True, blanck=True,
+    creation_date = models.DateTimeField(null=True, blank=True,
                                          verbose_name=_("creation date"))
-    description =models.TextField(null=True, blanck=True,
+    description =models.TextField(null=True, blank=True,
                                   verbose_name=_("sdescription"))
-    file = models.FileField(null=False, blank-False, upload_to=calculate_document_patch,
+    file = models.FileField(null=False, blank=False, upload_to=calculate_document_path,
                             verbose_name=_("file"))
 
     class Meta:
