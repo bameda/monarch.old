@@ -1,28 +1,21 @@
 {
   "name": "monarch",
   "version": "0.0.1",
-  "homepage": "https://github.com/bameda/monarch",
   "authors": [
-    {
-      "name": "iDavid Barragán Merino",
+    ́{
+      "name": "David Barragán Merino",
       "email": "bameda@dbarragan.com"
     }
   ],
-  "description": "Monarch app",
+  "description": "",
   "license": "AGPL-3.0",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:bameda/monarch.git"
-  },
   "ignore": [
     "**/.*",
-    "node_modules"
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
   ],
-  "dependencies": {
-    "jquery": "~2.1.4",
-    "lodash": "~3.8.0",
-    "moment": "~2.10.2",
-    "bootstrap": "~3.3.4"
-  }
+  "dependencies": {},
+  "private": true
 }
