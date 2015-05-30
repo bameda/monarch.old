@@ -1,0 +1,25 @@
+{
+  "name": "monarch",
+  "version": "0.0.1",
+  "author": "David Barragán Merino <bameda@dbarragan.com>",
+  "license": "AGPL",
+  "description": "monarch",
+  "main": "index.js",
+  "homepage": "https://github.com/bameda/monarch",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bameda/monarch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bameda/monarch/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-cached": "^1.1.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-webserver": "^0.9.1"
+  }
+}
