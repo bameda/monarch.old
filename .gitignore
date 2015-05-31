@@ -53,14 +53,14 @@ docs/_build/
 # PyBuilder
 target/
 
-# Node
+# Node & bower
 node_modules
-
-# bower
-monarch/base/static/vendors
+bower_components
 
 # Misc
 .env
 .*.sw*
 
-
+# monarch
+/static
+/media
