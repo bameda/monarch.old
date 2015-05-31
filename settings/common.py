@@ -83,6 +83,7 @@ INSTALLED_APPS = (
 
     'monarch',
     'monarch.base',
+    'monarch.front',
     'monarch.users',
     'monarch.documents',
 )
