@@ -1,13 +1,10 @@
 {
   "name": "monarch",
   "version": "0.0.1",
+  "homepage": "https://github.com/bameda/monarch",
   "authors": [
-    ́{
-      "name": "David Barragán Merino",
-      "email": "bameda@dbarragan.com"
-    }
+    "David Barragán Merino <david.barragan@kaleidos.net>"
   ],
-  "description": "",
   "license": "AGPL-3.0",
   "ignore": [
     "**/.*",
@@ -16,6 +13,8 @@
     "test",
     "tests"
   ],
-  "dependencies": {},
-  "private": true
+  "dependencies": {
+    "bootstrap-sass": "~3.3.4",
+    "jquery": "~2.1.4"
+  }
 }
