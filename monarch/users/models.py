@@ -50,7 +50,8 @@ class PermissionsMixin(models.Model):
 
 
 class User(AbstractBaseUser, PermissionsMixin):
-    username = models.CharField(null=False, blank=False, unique=True, max_length=255, verbose_name=_("username"),
+    username = models.CharField(null=False, blank=False, unique=True, max_length=255,
+                                verbose_name=_("username"),
                                 help_text=_("Required. 255 characters or fewer. Letters, numbers and "
                                             "/./-/_ characters"),
                                 validators=[validators.RegexValidator(re.compile("^[\w.-]+$"),
@@ -73,12 +74,15 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
 
     class Meta:
-        verbose_name = "user"
-        verbose_name_plural = "users"
+        verbose_name = _("user")
+        verbose_name_plural = _("users")
         ordering = ["username"]
+
+    def __str__(self):
+        return self.get_full_name()
 
     def get_short_name(self):
         return self.username
 
     def get_full_name(self):
-        return self.full_name or self.username or self.email
+        return self.full_name or self.username

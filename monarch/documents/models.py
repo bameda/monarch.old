@@ -26,8 +26,10 @@ class Document(models.Model):
                                verbose_name=_("subject"))
     author = models.CharField(null=False, blank=False, max_length=256,
                               verbose_name=_("author"))
-    creation_date = models.DateTimeField(null=True, blank=True,
+    creation_date = models.DateTimeField(null=False, blank=False, auto_now_add=True,
                                          verbose_name=_("creation date"))
+    last_modified_date = models.DateTimeField(null=False, blank=False, auto_now=True,
+                                              verbose_name=_("last modified date"))
     description =models.TextField(null=True, blank=True,
                                   verbose_name=_("sdescription"))
     file = models.FileField(null=False, blank=False, upload_to=calculate_document_path,
