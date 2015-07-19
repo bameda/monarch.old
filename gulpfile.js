@@ -65,10 +65,8 @@ gulp.task("watch", function () {
 
 gulp.task("server", function () {
     return gulp.src(SRC_DIR)
-               .pipe(webserver({
-                        livereload: true,
-                        port: 8080
-                     }))
+               .pipe(webserver({livereload: true,
+                                port: 8080}))
 });
 
 /*************************************************************************
