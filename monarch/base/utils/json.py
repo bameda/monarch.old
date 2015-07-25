@@ -21,7 +21,7 @@ from django.core.serializers.json import DjangoJSONEncoder
 from django.utils.functional import Promise
 from django.utils import timezone
 
-from django.utils.encoding import force_unicode
+from django.utils.encoding import force_str
 
 
 class LazyEncoder(DjangoJSONEncoder):
@@ -31,7 +31,7 @@ class LazyEncoder(DjangoJSONEncoder):
     """
     def default(self, obj):
         if isinstance(obj, Promise):
-            return force_unicode(obj)
+            return force_str(obj)
         elif isinstance(obj, datetime.datetime):
             obj = timezone.localtime(obj)
         return super(LazyEncoder, self).default(obj)
