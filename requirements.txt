@@ -1,5 +1,6 @@
 git+git://github.com/django/django#egg=django # Dajngo 1.9
 psycopg2==2.6
+django-jinja=1.4.1
 
 django-sampledatahelper==0.3
 
