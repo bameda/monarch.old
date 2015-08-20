@@ -17,3 +17,4 @@
 from .base import View
 from .base import TemplateView
 from .ajax import AjaxMixin
+from .api import ApiMixin
