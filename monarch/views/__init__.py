@@ -14,20 +14,7 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
-from django.conf.urls import include, url
-from django.contrib import admin
-
-
-handler400 = "monarch.views.Error400"
-handler403 = "monarch.views.Error403"
-handler404 = "monarch.views.Error404"
-handler500 = "monarch.views.Error500"
-
-
-urlpatterns = [
-    # Examples:
-    # url(r'^$', 'monarch.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^admin/', include(admin.site.urls)),
-]
+from .errors import Error400
+from .errors import Error403
+from .errors import Error404
+from .errors import Error500

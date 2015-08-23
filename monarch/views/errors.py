@@ -14,20 +14,18 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
-from django.conf.urls import include, url
-from django.contrib import admin
+from monarch.base import views
 
 
-handler400 = "monarch.views.Error400"
-handler403 = "monarch.views.Error403"
-handler404 = "monarch.views.Error404"
-handler500 = "monarch.views.Error500"
+class Error400(views.TemplateView):
+    tmpl_name = "400.jinja"
 
+class Error403(views.TemplateView):
+    tmpl_name = "403.jinja"
 
-urlpatterns = [
-    # Examples:
-    # url(r'^$', 'monarch.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
+class Error404(views.TemplateView):
+    tmpl_name = "404.jinja"
 
-    url(r'^admin/', include(admin.site.urls)),
-]
+class Error500(views.TemplateView):
+    tmpl_name = "500.jinja"
+
