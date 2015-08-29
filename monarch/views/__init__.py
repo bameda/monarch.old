@@ -14,6 +14,8 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
+from .home import Home
+
 from .errors import Error400
 from .errors import Error403
 from .errors import Error404
